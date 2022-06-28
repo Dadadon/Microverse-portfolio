@@ -15,7 +15,7 @@ Additional description about the project and its features.
  - Code editor (vscode, etc)
  - Web browser (chrome, etc)
 
->To get a local copy up and running follow these simple example steps.
+>To get a local copy up and running follow these simple steps.
  - Clone this repository or download the Zip folder
  - Navigate to the location of the folder in your machine
  
