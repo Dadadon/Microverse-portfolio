@@ -9,6 +9,17 @@ Additional description about the project and its features.
 - css
 - github
 
+## Getting Started
+
+### Prerequisites
+ - Code editor (vscode, etc)
+ - Web browser (chrome, etc)
+
+>To get a local copy up and running follow these simple example steps.
+ - Clone this repository or download the Zip folder
+ - Navigate to the location of the folder in your machine
+ 
+
 ## Author
 👤 **Author1**
 
@@ -20,4 +31,4 @@ Additional description about the project and its features.
 
 - Microverse
 
-## 📝 License This project is MIT licensed. 
+## 📝 License This project is [MIT](./MIT.md) licensed.
