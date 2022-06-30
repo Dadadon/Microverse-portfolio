@@ -17,7 +17,9 @@ Additional description about the project and its features.
 
 >To get a local copy up and running follow these simple steps.
  - Clone this repository or download the Zip folder
+    **``git clone https://github.com/Dadadon/Microverse-portfolio.git``**
  - Navigate to the location of the folder in your machine
+    **``you@your-Pc-name:~$ cd <folder>``**
  
 
 ## Author
