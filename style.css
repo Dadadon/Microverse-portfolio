@@ -127,7 +127,7 @@ body {
   margin-bottom: 70px;
   border-radius: 16px;
   background-color: white;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   padding-bottom: 30px;
 }
 
@@ -148,7 +148,7 @@ body {
   width: 295px;
   height: auto;
   margin-left: 16px;
-  margin-top: 12px; 
+  margin-top: 12px;
 }
 
 .portfolio-head {
@@ -281,8 +281,9 @@ body {
   box-sizing: border-box;
   border-radius: 8px;
 }
+
 .p-button:hover {
-  background: #6070FF;
+  background: #6070ff;
 }
 
 .p-proj {
@@ -353,7 +354,7 @@ body {
   bottom: 37.5%;
   align-self: center;
 }
-  
+ 
 .l-list {
   display: flex;
   flex-direction: column;
