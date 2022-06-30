@@ -281,6 +281,9 @@ body {
   box-sizing: border-box;
   border-radius: 8px;
 }
+.p-button:hover {
+  background: #6070FF;
+}
 
 .p-proj {
   font-family: Poppins, sans-serif;
