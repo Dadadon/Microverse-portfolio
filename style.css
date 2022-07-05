@@ -356,6 +356,10 @@ body {
   background: #6070ff;
 }
 
+.p-button:active {
+   background-color: #2230D2;
+}
+
 .p-proj {
   font-style: normal;
   font-weight: 500;
