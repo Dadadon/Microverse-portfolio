@@ -108,6 +108,10 @@ ul {
   width: 90%;
 }
 
+label {
+  display: none;
+}
+
 .mylogo {
   position: static;
   width: 76px;
