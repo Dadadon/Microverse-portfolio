@@ -8,7 +8,5 @@ function closeNav() {
   document.body.style.overflow = "visible";
 }
 
-function call() {
-  openNav();
-  closeNav();
-}
+openNav();
+closeNav();
