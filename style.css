@@ -35,14 +35,14 @@ ul {
 .overlay {
   height: 100%;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 0;
   left: 0;
   top: 0;
-  background: #6070ff;
-  background-color: rgba(96, 112, 255, 0.902);
+  background-color: rgba(30, 78, 255, 0.6);
   overflow-x: hidden;
   transition: 0.5s;
+  backdrop-filter: blur(8px);
 }
 
 .overlay-content {
