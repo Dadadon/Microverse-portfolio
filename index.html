@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-941LSS5HK8");
+    </script>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+    
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+      </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,21 +37,32 @@
 
   <body>
     <header>
-      <div class="nav-container">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <div class="overlay-content">
+          <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+          <a href="#about" onclick="closeNav()">About</a>
+          <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+      <nav class="nav-container">
         <div>
           <a class="mylogo" href=""
             ><img class="logo-img" src="src/logo.png" alt="Davian Beroni"
           /></a>
         </div>
-        <nav class="menuholder mobile-only">
+        <div class="menuholder mobile-only" onclick="openNav()">
           <img src="src/menuicon.png" alt="menu icon" />
-        </nav>
+        </div>
         <nav class="menu-items">
           <a href="#">Portfolio</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
         </nav>
-      </div>
+      </nav>
     </header>
 
     <section class="header-container">
