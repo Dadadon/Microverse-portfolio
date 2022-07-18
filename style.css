@@ -16,6 +16,21 @@ ul {
   padding: 0;
 }
 
+.el-order {
+  order: 0;
+}
+
+.el-order1 {
+  order: 1;
+}
+
+.about-mb {
+  margin-bottom: -115px;
+}
+
+.fbuttom-mt {
+  margin-top: 0;
+}
 .overlay {
   height: 100%;
   width: 0;
