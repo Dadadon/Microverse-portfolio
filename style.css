@@ -16,6 +16,67 @@ ul {
   padding: 0;
 }
 
+.el-order {
+  order: 0;
+}
+
+.el-order1 {
+  order: 1;
+}
+
+.about-mb {
+  margin-bottom: -115px;
+}
+
+.fbuttom-mt {
+  margin-top: 0;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(30, 78, 255, 0.6);
+  overflow-x: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(8px);
+}
+
+.overlay-content {
+  position: relative;
+  top: 2rem;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+  padding: 1rem;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
+
 .p-html {
   width: max-content;
   padding-left: 10px;

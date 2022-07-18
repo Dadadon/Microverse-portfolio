@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-941LSS5HK8");
+    </script>
+    <script src="app.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,28 +22,38 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link />
     <link rel="icon" href="src/logo.png" />
     <title>Davian Beroni</title>
   </head>
 
   <body>
     <header>
-      <div class="nav-container">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <div class="overlay-content">
+          <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+          <a href="#about" onclick="closeNav()">About</a>
+          <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+      <nav class="nav-container">
         <div>
           <a class="mylogo" href=""
             ><img class="logo-img" src="src/logo.png" alt="Davian Beroni"
           /></a>
         </div>
-        <nav class="menuholder mobile-only">
+        <div class="menuholder mobile-only" onclick="openNav()">
           <img src="src/menuicon.png" alt="menu icon" />
-        </nav>
+        </div>
         <nav class="menu-items">
           <a href="#">Portfolio</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
         </nav>
-      </div>
+      </nav>
     </header>
 
     <section class="header-container">
@@ -66,19 +89,19 @@
       </ul>
     </section>
 
-    <section class="portfolio-container">
+    <section class="portfolio-container" id="portfolio">
       <div class="portfolio-card">
         <div class="mobile-only">
           <img
             class="portfolio-image"
-            src="src/Snapshoot Portfolio.png"
+            src="src/Snapshoot_Portfolio.png"
             alt="Portfolio"
           />
         </div>
         <div class="desktop-only">
           <img
             class="portfolio-imaged"
-            src="src/Snapshoot Portfoliod.png"
+            src="src/Snapshoot_Portfoliod.png"
             alt="Portfolio"
           />
         </div>
@@ -90,7 +113,7 @@
                 <h2 class="canopy">CANOPY</h2>
               </li>
               <li>
-                <fh2 class="backend">Back End Dev</h2>
+                <h2 class="backend">Back End Dev</h2>
               </li>
               <li>
                 <img src="src/Counter.png" alt="counter" />
@@ -139,18 +162,18 @@
         <div class="mobile-only">
           <img
             class="portfolio-image"
-            src="src/Snapshoot Portfolio (2).png"
+            src="src/Snapshoot_Portfolio(2).png"
             alt="Portfolio"
           />
         </div>
-        <div class="desktop-only" style="order: 1">
+        <div class="desktop-only el-order1">
           <img
             class="portfolio-imaged"
-            src="src/Snapshoot Portfoliod2.png"
+            src="src/Snapshoot_Portfoliod2.png"
             alt="Portfolio"
           />
         </div>
-        <div class="portfolio-content" style="order: 0">
+        <div class="portfolio-content el-order">
           <div class="p-layout">
             <h1 class="portfolio-head">Multi-Post Stories</h1>
             <ul class="frame mobile-only">
@@ -216,14 +239,14 @@
         <div class="mobile-only">
           <img
             class="portfolio-image"
-            src="src/Snapshoot Portfolio (3).png"
+            src="src/Snapshoot_Portfolio(3).png"
             alt="Portfolio"
           />
         </div>
         <div class="desktop-only">
           <img
             class="portfolio-imaged"
-            src="src/Snapshoot Portfoliod3.png"
+            src="src/Snapshoot_Portfoliod3.png"
             alt="Portfolio"
           />
         </div>
@@ -293,18 +316,18 @@
         <div class="mobile-only">
           <img
             class="portfolio-image"
-            src="src/Snapshoot Portfolio (4).png"
+            src="src/Snapshoot_Portfolio(4).png"
             alt="Portfolio"
           />
         </div>
-        <div class="desktop-only" style="order: 1">
+        <div class="desktop-only el-order1">
           <img
             class="portfolio-imaged"
-            src="src/Snapshoot Portfoliod4.png"
+            src="src/Snapshoot_Portfoliod4.png"
             alt="Portfolio"
           />
         </div>
-        <div class="portfolio-content" style="order: 0">
+        <div class="portfolio-content el-order">
           <div class="p-layout">
             <h1 class="portfolio-head mobile-only">Multi-Post Stories</h1>
             <h1 class="portfolio-head desktop-only">Uber Navigation</h1>
@@ -368,8 +391,8 @@
       </div>
     </section>
     <section
-      class="portfolio-container white aboutus-radius"
-      style="margin-bottom: -115px"
+      class="portfolio-container white aboutus-radius about-mb"
+      id="about"
     >
       <div class="aboutus-card">
         <div class="aboutus-content">
@@ -398,9 +421,7 @@
               <a href=""><img src="src/Vector3.svg" alt="Angellist" /></a>
             </li>
           </ul>
-          <button class="p-button">
-            Get my resume
-          </button>
+          <button class="p-button">Get my resume</button>
         </div>
         <div class="frame2">
           <div class="frame3 headmargintop">
@@ -433,7 +454,7 @@
       </div>
     </section>
 
-    <footer class="footer white">
+    <footer class="footer white" id="contact">
       <div class="contact-container">
         <h2 class="contact-text">Contact me</h2>
         <p class="contact-paragraph">
@@ -476,7 +497,7 @@
             required
             class="input text-area"
           ></textarea>
-          <button class="p-button btn" type="submit" style="margin-top: 0">
+          <button class="p-button btn fbutton-mt" type="submit">
             Get In Touch
           </button>
         </form>

@@ -26,11 +26,15 @@ https://dadadon.github.io/Microverse-portfolio/
  
 
 ## Author
-👤 **Author1**
+👤 **Davian Beroni**
 
 - GitHub: [dadadon](https://github.com/dadadon)
 - Twitter: [Davian Beroni](https://twitter.com/davianberoni)
 - LinkedIn: [Davian Beroni](https://www.linkedin.com/in/davian-beroni-502351b7/)
+
+👤 **Petro Lesapiti**
+
+- GitHub: [Petro](https://github.com/loltolo-lesapiti)
 
 ## Acknowledgments
 
