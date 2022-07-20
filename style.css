@@ -77,6 +77,98 @@ ul {
   right: 35px;
 }
 
+.bg-modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(182, 177, 177, 0.801);
+  width: 100%;
+  overflow-y: scroll;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  width: 80%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 30px 15px;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.modal-image-holder {
+  width: 100%;
+  height: 40%;
+}
+
+.modal-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.modal-head {
+  margin-bottom: 0;
+}
+
+.p-modal {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.close {
+  align-self: flex-end;
+  font-size: 32px;
+  align-items: center;
+  display: flex;
+  padding: 4px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  top: 20px;
+  color: rgba(103, 121, 142, 1);
+  transform: rotate(45deg);
+}
+
+.live {
+  margin-left: 0;
+  text-decoration: none;
+}
+
+.source {
+  text-decoration: none;
+}
+
+.b-layout {
+  margin-left: 1rem;
+  gap: 1rem;
+  display: flex;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
 .p-html {
   width: max-content;
   padding-left: 10px;
@@ -387,12 +479,20 @@ textarea {
   left: 0;
   margin-top: 12px;
   justify-content: space-between;
-  order: 1;
+}
+
+.bullet-disc {
+  display: block;
+}
+
+.bullet-disc::before {
+  content: "●";
+  display: inline-block;
 }
 
 .canopy {
   position: static;
-  width: 55px;
+  width: auto;
   height: 16px;
   left: 0;
   margin-top: 20px;
@@ -401,6 +501,7 @@ textarea {
   font-size: 13px;
   line-height: 16px;
   color: #344563;
+  padding-bottom: 1.1rem;
 }
 
 .backend {
@@ -413,6 +514,7 @@ textarea {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
+  padding-bottom: 1.1rem;
 }
 
 .year {
@@ -431,7 +533,6 @@ textarea {
 .p-text {
   position: static;
   width: 295px;
-  height: 76px;
   margin-left: 16px;
   margin-top: 12px;
   font-style: normal;
@@ -452,6 +553,17 @@ textarea {
   margin-left: 12px;
   top: 180px;
   justify-content: space-between;
+}
+
+.p-lang {
+  color: #4e5cd4;
+}
+
+.r-modal {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
 }
 
 .p-proj {
@@ -519,6 +631,23 @@ textarea {
 
 .aboutus-radius {
   border-radius: 0 100px 0 0;
+}
+
+.framep {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  position: static;
+  gap: 0.5rem;
+}
+
+.langm {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  gap: 1rem;
+  margin-left: 1rem;
+  flex-wrap: wrap;
 }
 
 @media all and (min-width: 1025px) {
@@ -674,7 +803,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10%;
+    padding-bottom: 100px;
   }
 
   .portfolio-imaged {
@@ -708,7 +837,6 @@ textarea {
     padding: 0;
     position: static;
     width: 297px;
-    height: 40px;
     justify-content: space-between;
   }
 
@@ -721,6 +849,7 @@ textarea {
     font-size: 18px;
     line-height: 24px;
     color: #344563;
+    padding-bottom: 1.1rem;
   }
 
   .backend {
@@ -732,6 +861,7 @@ textarea {
     font-size: 18px;
     line-height: 24px;
     color: #6b778c;
+    padding-bottom: 1.1rem;
   }
 
   .year {
@@ -750,6 +880,15 @@ textarea {
     flex-direction: row;
     float: left;
     gap: 1rem;
+    margin-left: 1rem;
+  }
+
+  .langm {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    gap: 1rem;
+    flex-wrap: nowrap;
     margin-left: 1rem;
   }
 
@@ -868,5 +1007,18 @@ textarea {
 
   .footer {
     padding-bottom: 0;
+  }
+
+  .modal-layout {
+    flex-direction: row;
+  }
+
+  .modal-image-holder {
+    width: 100%;
+    height: 60%;
+  }
+
+  .modal-content {
+    height: 80%;
   }
 }

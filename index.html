@@ -13,11 +13,14 @@
       gtag("js", new Date());
       gtag("config", "G-941LSS5HK8");
     </script>
-    <script src="app.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
       rel="stylesheet"
@@ -30,9 +33,7 @@
     <header>
       <div id="myNav" class="overlay mobile-only">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-
+          >&times;</a>
         <div class="overlay-content">
           <a href="#portfolio" onclick="closeNav()">Portfolio</a>
           <a href="#about" onclick="closeNav()">About</a>
@@ -58,12 +59,12 @@
 
     <section class="header-container">
       <div class="headerholder headmargin">
-        <h1 class="head">I’m Davian Glad to see you!</h1>
+        <h1 class="head">I'm Davian Glad to see you!</h1>
       </div>
       <p class="headtext headmargin">
         I’m a software developer! I can help you build a product , feature or
         website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hestiate to contact me.
+        you see and have a project you need coded, don't hestiate to contact me.
       </p>
 
       <div class="supporttext headmargin">
@@ -88,308 +89,35 @@
         </li>
       </ul>
     </section>
-
-    <section class="portfolio-container" id="portfolio">
-      <div class="portfolio-card">
-        <div class="mobile-only">
-          <img
-            class="portfolio-image"
-            src="src/Snapshoot_Portfolio.png"
-            alt="Portfolio"
-          />
-        </div>
-        <div class="desktop-only">
-          <img
-            class="portfolio-imaged"
-            src="src/Snapshoot_Portfoliod.png"
-            alt="Portfolio"
-          />
-        </div>
-        <div class="portfolio-content">
-          <div class="p-layout">
-            <h1 class="portfolio-head">Tonic</h1>
-            <ul class="frame mobile-only">
-              <li>
-                <h2 class="canopy">CANOPY</h2>
-              </li>
-              <li>
-                <h2 class="backend">Back End Dev</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="year">2015</h2>
-              </li>
-            </ul>
-            <ul class="framed desktop-only">
-              <li>
-                <h2 class="canopy">CANOPY</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="backend">Back End Dev</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="year">2015</h2>
-              </li>
-            </ul>
+    <section class="modal-container" id="portfolio">
+      <div class="bg-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-head" id="modal-head">Tonic</h1>
+            <div class="close">+</div>
           </div>
-
-          <p class="p-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="lang mobile-only">
-            <li class="p-html"><a class="a-lang" href="">html</a></li>
-            <li class="p-html"><a class="a-lang" href="">css</a></li>
-            <li class="p-html"><a class="a-lang" href="">javaScript</a></li>
-          </ul>
-          <ul class="lang2 desktop-only">
-            <li class="p-html"><a class="a-lang" href="">html</a></li>
-            <li class="p-html"><a class="a-lang" href="">css</a></li>
-            <li class="p-html"><a class="a-lang" href="">javaScript</a></li>
-          </ul>
-          <button class="p-button headmargin12">See Project</button>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <div class="mobile-only">
-          <img
-            class="portfolio-image"
-            src="src/Snapshoot_Portfolio(2).png"
-            alt="Portfolio"
-          />
-        </div>
-        <div class="desktop-only el-order1">
-          <img
-            class="portfolio-imaged"
-            src="src/Snapshoot_Portfoliod2.png"
-            alt="Portfolio"
-          />
-        </div>
-        <div class="portfolio-content el-order">
-          <div class="p-layout">
-            <h1 class="portfolio-head">Multi-Post Stories</h1>
-            <ul class="frame mobile-only">
-              <li>
-                <h2 class="canopy">CANOPY</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="backend">Back End Dev</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="year">2015</h2>
-              </li>
-            </ul>
-            <ul class="framed desktop-only">
-              <li>
-                <h2 class="canopy">FACEBOOK</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="backend">Full Stack Dev</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="year">2015</h2>
-              </li>
-            </ul>
+          <ul class="framep" id="expd"></ul>
+          <div class="modal-image-holder">
+            <img class="modal-image" src="src/Snapshoot_Portfolio(2).png" alt="" />
           </div>
-
-          <p class="p-text desktop-only">
-            Experimental content creation feature that allows users to add to an
-            existing story over the course of a day without spamming their
-            friends.
-          </p>
-          <p class="p-text mobile-only">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="lang mobile-only">
-            <li class="p-html"><a class="a-lang" href="">html</a></li>
-            <li class="p-html"><a class="a-lang" href="">css</a></li>
-            <li class="p-html"><a class="a-lang" href="">javaScript</a></li>
-          </ul>
-          <ul class="lang2 desktop-only">
-            <li class="p-html"><a class="a-lang" href="">html</a></li>
-            <li class="p-html"><a class="a-lang" href="">Ruby on rails</a></li>
-            <li class="p-html"><a class="a-lang" href="">css</a></li>
-            <li class="p-html"><a class="a-lang" href="">javaScript</a></li>
-          </ul>
-          <button class="p-button headmargin12">See Project</button>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <div class="mobile-only">
-          <img
-            class="portfolio-image"
-            src="src/Snapshoot_Portfolio(3).png"
-            alt="Portfolio"
-          />
-        </div>
-        <div class="desktop-only">
-          <img
-            class="portfolio-imaged"
-            src="src/Snapshoot_Portfoliod3.png"
-            alt="Portfolio"
-          />
-        </div>
-        <div class="portfolio-content">
-          <div class="p-layout">
-            <h1 class="portfolio-head desktop-only">Facebook 360</h1>
-            <h1 class="portfolio-head mobile-only">Tonic</h1>
-            <ul class="frame mobile-only">
-              <li>
-                <h2 class="canopy">CANOPY</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="backend">Back End Dev</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="year">2015</h2>
-              </li>
-            </ul>
-            <ul class="framed desktop-only">
-              <li>
-                <h2 class="canopy">FACEBOOK</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="backend">Full Stack Dev</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="year">2015</h2>
-              </li>
-            </ul>
+          <div class="modal-layout">
+            <p class="p-modal" id="p-modald">Test</p>
+            <div class="r-modal" id="l-holder">
+              <ul class="langm" id="lan"></ul>
+              <div class="b-layout">
+                <a class="live p-button"
+                  >See live <span><i class="fa fa-external-link"></i></span
+                ></a>
+                <a class="source p-button"
+                  >See source <span><i class="fa fa-github"></i></span
+                ></a>
+              </div>
+            </div>
           </div>
-
-          <p class="p-text desktop-only">
-            Exploring the future of media in Facebook's first Virtual Reality
-            app; a place to discover and enjoy 360 photos and videos on Gear VR.
-          </p>
-          <p class="p-text mobile-only">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="lang mobile-only">
-            <li class="p-html"><a class="a-lang" href="">html</a></li>
-            <li class="p-html"><a class="a-lang" href="">css</a></li>
-            <li class="p-html"><a class="a-lang" href="">javaScript</a></li>
-          </ul>
-          <ul class="lang2 desktop-only">
-            <li class="p-html"><a class="a-lang" href="">html</a></li>
-            <li class="p-html"><a class="a-lang" href="">Ruby on rails</a></li>
-            <li class="p-html"><a class="a-lang" href="">css</a></li>
-            <li class="p-html"><a class="a-lang" href="">javaScript</a></li>
-          </ul>
-          <button class="p-button headmargin12">See Project</button>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <div class="mobile-only">
-          <img
-            class="portfolio-image"
-            src="src/Snapshoot_Portfolio(4).png"
-            alt="Portfolio"
-          />
-        </div>
-        <div class="desktop-only el-order1">
-          <img
-            class="portfolio-imaged"
-            src="src/Snapshoot_Portfoliod4.png"
-            alt="Portfolio"
-          />
-        </div>
-        <div class="portfolio-content el-order">
-          <div class="p-layout">
-            <h1 class="portfolio-head mobile-only">Multi-Post Stories</h1>
-            <h1 class="portfolio-head desktop-only">Uber Navigation</h1>
-            <ul class="frame mobile-only">
-              <li>
-                <h2 class="canopy">CANOPY</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="backend">Back End Dev</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="year">2015</h2>
-              </li>
-            </ul>
-            <ul class="framed desktop-only">
-              <li>
-                <h2 class="canopy">Uber</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="backend">Lead Developer</h2>
-              </li>
-              <li>
-                <img src="src/Counter.png" alt="counter" />
-              </li>
-              <li>
-                <h2 class="year">2018</h2>
-              </li>
-            </ul>
-          </div>
-
-          <p class="p-text desktop-only">
-            A smart assistant to make driving more safe, efficient, and fun by
-            unlocking your most expensive computer: your car.
-          </p>
-          <p class="p-text mobile-only">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="lang mobile-only">
-            <li class="p-html"><a class="a-lang" href="">html</a></li>
-            <li class="p-html"><a class="a-lang" href="">css</a></li>
-            <li class="p-html"><a class="a-lang" href="">javaScript</a></li>
-          </ul>
-          <ul class="lang2 desktop-only">
-            <li class="p-html"><a class="a-lang" href="">html</a></li>
-            <li class="p-html"><a class="a-lang" href="">Ruby on rails</a></li>
-            <li class="p-html"><a class="a-lang" href="">css</a></li>
-            <li class="p-html"><a class="a-lang" href="">javaScript</a></li>
-          </ul>
-          <button class="p-button headmargin12">See Project</button>
         </div>
       </div>
     </section>
+    <ul class="card-list portfolio-container" id="cards"></ul>
     <section
       class="portfolio-container white aboutus-radius about-mb"
       id="about"
@@ -398,9 +126,9 @@
         <div class="aboutus-content">
           <h1 class="portfolio-head">About<br />Myself</h1>
           <p class="a-par">
-            Hello I’m a software developer! I can help you build a product ,
+            Hello I'm a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
+            you like what you see and have a project you need coded, don't
             hestiate to contact me.
           </p>
           <h1 class="suptext">LET'S CONNECT</h1>
@@ -459,7 +187,7 @@
         <h2 class="contact-text">Contact me</h2>
         <p class="contact-paragraph">
           If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
+          that you need built or a project that needs coding. I'd love to help
           with it
         </p>
         <form
@@ -503,5 +231,6 @@
         </form>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
