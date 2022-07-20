@@ -21,7 +21,7 @@ const portfolioCards = [
     image: 'src/Snapshoot_Portfoliod.png',
     imagem: 'src/Snapshoot_Portfolio.png',
     popImgd: 'src/Snapshoot_Portfoliod.png',
-    name: 'Tonic',
+    name: 'Tonic', 
     exp: ['CANOPY', '•','Back End Dev', '•', '2015'],
     expm: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
