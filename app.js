@@ -202,7 +202,6 @@ portfolioCards.forEach((el, i) => {
       </li>`;
 
   const far = template.content.lastElementChild;
-  //template.content.getElementById("languages").firstChild.classList.add("canopy");
   template.content.getElementById("p-cont").appendChild(btn);
   grab("cards").appendChild(far);
 });
