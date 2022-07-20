@@ -1,11 +1,11 @@
 function openNav() {
-  document.getElementById('myNav').style.width = '100%';
-  document.body.style.overflow = 'hidden';
+  document.getElementById("myNav").style.width = "100%";
+  document.body.style.overflow = "hidden";
 }
 
 function closeNav() {
-  document.getElementById('myNav').style.width = '0%';
-  document.body.style.overflow = 'visible';
+  document.getElementById("myNav").style.width = "0%";
+  document.body.style.overflow = "visible";
 }
 
 openNav();
@@ -17,76 +17,76 @@ function grab(e) {
 
 const portfolioCards = [
   {
-    key: 'c1',
-    image: 'src/Snapshoot_Portfoliod.png',
-    imagem: 'src/Snapshoot_Portfolio.png',
-    popImgd: 'src/Snapshoot_Portfoliod.png',
-    name: 'Tonic', 
-    exp: ['CANOPY', '•','Back End Dev', '•', '2015'],
-    expm: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
-    technologiesm: ['CSS', 'JavaScript', 'html'],
+    key: "c1",
+    image: "src/Snapshoot_Portfoliod.png",
+    imagem: "src/Snapshoot_Portfolio.png",
+    popImgd: "src/Snapshoot_Portfoliod.png",
+    name: "Tonic",
+    exp: ["CANOPY", "•", "Back End Dev", "•", "2015"],
+    expm: ["CANOPY", "•", "Back End Dev", "•", "2015"],
+    technologies: ["Ruby on rails", "CSS", "JavaScript", "html"],
+    technologiesm: ["CSS", "JavaScript", "html"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    button: 'See Project',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    button: "See Project",
     links: [
-      'https://dadadon.github.io/Setup-and-mobile-version-skeleton/',
-      'https://github.com/Dadadon/Setup-and-mobile-version-skeleton',
+      "https://dadadon.github.io/Setup-and-mobile-version-skeleton/",
+      "https://github.com/Dadadon/Setup-and-mobile-version-skeleton",
     ],
   },
   {
-    key: 'c2',
-    imagem: 'src/Snapshoot_Portfolio(2).png',
-    imageo: 'src/Snapshoot_Portfoliod2.png',
-    popImgd: 'src/Snapshoot_Portfoliod2.png',
-    name: 'Multi-Post Stories',
-    exp: ['FACEBOOK', '•', 'Ful Stack Dev', '•', '2015'],
-    expm: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
-    technologiesm: ['CSS', 'JavaScript', 'html'],
+    key: "c2",
+    imagem: "src/Snapshoot_Portfolio(2).png",
+    imageo: "src/Snapshoot_Portfoliod2.png",
+    popImgd: "src/Snapshoot_Portfoliod2.png",
+    name: "Multi-Post Stories",
+    exp: ["FACEBOOK", "•", "Ful Stack Dev", "•", "2015"],
+    expm: ["CANOPY", "•", "Back End Dev", "•", "2015"],
+    technologies: ["Ruby on rails", "CSS", "JavaScript", "html"],
+    technologiesm: ["CSS", "JavaScript", "html"],
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    button: 'See Project',
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    button: "See Project",
     links: [
-      'https://dadadon.github.io/Setup-and-mobile-version-skeleton/',
-      'https://github.com/Dadadon/Setup-and-mobile-version-skeleton',
+      "https://dadadon.github.io/Setup-and-mobile-version-skeleton/",
+      "https://github.com/Dadadon/Setup-and-mobile-version-skeleton",
     ],
   },
   {
-    key: 'c3',
-    image: 'src/Snapshoot_Portfoliod3.png',
-    imagem: 'src/Snapshoot_Portfolio(3).png',
-    popImgd: 'src/Snapshoot_Portfoliod3.png',
-    name: 'Facebook 360',
-    exp: ['FACEBOOK', '•', 'Ful Stack Dev', '•', '2015'],
-    expm: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
-    technologiesm: ['CSS', 'JavaScript', 'html'],
+    key: "c3",
+    image: "src/Snapshoot_Portfoliod3.png",
+    imagem: "src/Snapshoot_Portfolio(3).png",
+    popImgd: "src/Snapshoot_Portfoliod3.png",
+    name: "Facebook 360",
+    exp: ["FACEBOOK", "•", "Ful Stack Dev", "•", "2015"],
+    expm: ["CANOPY", "•", "Back End Dev", "•", "2015"],
+    technologies: ["Ruby on rails", "CSS", "JavaScript", "html"],
+    technologiesm: ["CSS", "JavaScript", "html"],
     description:
-      'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    button: 'See Project',
+      "Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    button: "See Project",
     links: [
-      'https://dadadon.github.io/Setup-and-mobile-version-skeleton/',
-      'https://github.com/Dadadon/Setup-and-mobile-version-skeleton',
+      "https://dadadon.github.io/Setup-and-mobile-version-skeleton/",
+      "https://github.com/Dadadon/Setup-and-mobile-version-skeleton",
     ],
   },
   {
-    key: 'c4',
-    image: 'SnapshotPortfolio4.png',
-    imagem: 'src/Snapshoot_Portfolio(4).png',
-    imageo: 'src/Snapshoot_Portfoliod4.png',
-    popImgd: 'src/Snapshoot_Portfoliod4.png',
-    name: 'Uber Navigation',
-    exp: ['UBER', '•', 'Lead Developer', '•', '2018'],
-    expm: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
-    technologiesm: ['CSS', 'JavaScript', 'html'],
+    key: "c4",
+    image: "SnapshotPortfolio4.png",
+    imagem: "src/Snapshoot_Portfolio(4).png",
+    imageo: "src/Snapshoot_Portfoliod4.png",
+    popImgd: "src/Snapshoot_Portfoliod4.png",
+    name: "Uber Navigation",
+    exp: ["UBER", "•", "Lead Developer", "•", "2018"],
+    expm: ["CANOPY", "•", "Back End Dev", "•", "2015"],
+    technologies: ["Ruby on rails", "CSS", "JavaScript", "html"],
+    technologiesm: ["CSS", "JavaScript", "html"],
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    button: 'See Project',
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    button: "See Project",
     links: [
-      'https://dadadon.github.io/Setup-and-mobile-version-skeleton/',
-      'https://github.com/Dadadon/Setup-and-mobile-version-skeleton',
+      "https://dadadon.github.io/Setup-and-mobile-version-skeleton/",
+      "https://github.com/Dadadon/Setup-and-mobile-version-skeleton",
     ],
   },
 ];
@@ -94,70 +94,70 @@ const portfolioCards = [
 function popup(position) {
   const el = portfolioCards[position];
 
-  const pop = document.querySelector('.bg-modal');
-  pop.style.display = 'block';
+  const pop = document.querySelector(".bg-modal");
+  pop.style.display = "block";
 
-  const firstCard = document.querySelector('.modal-image');
+  const firstCard = document.querySelector(".modal-image");
   firstCard.src = `${el.popImgd}`;
 
-  const liveb = document.querySelector('.live');
+  const liveb = document.querySelector(".live");
   liveb.href = `${el.links[0]}`;
 
-  const sourceb = document.querySelector('.source');
+  const sourceb = document.querySelector(".source");
   sourceb.href = `${el.links[1]}`;
 
-  document.querySelector('.modal-head').innerText = el.name;
+  document.querySelector(".modal-head").innerText = el.name;
 
-  const btnContiner = document.getElementById('lan');
-  btnContiner.innerHTML = '';
+  const btnContiner = document.getElementById("lan");
+  btnContiner.innerHTML = "";
 
-  const btnContiner2 = document.getElementById('expd');
-  btnContiner2.innerHTML = '';
+  const btnContiner2 = document.getElementById("expd");
+  btnContiner2.innerHTML = "";
 
-  const paragraph = document.querySelector('.p-modal');
+  const paragraph = document.querySelector(".p-modal");
   paragraph.textContent = `${el.description}`;
 
   el.technologies.forEach((btn) => {
-    const liBtn = document.createElement('li');
-    liBtn.className = 'p-lang';
-    liBtn.classList.add('p-html');
+    const liBtn = document.createElement("li");
+    liBtn.className = "p-lang";
+    liBtn.classList.add("p-html");
     liBtn.innerText = btn;
     btnContiner.appendChild(liBtn);
   });
   let counter = 1;
   el.exp.forEach((btn) => {
-    const liBtn2 = document.createElement('li');
+    const liBtn2 = document.createElement("li");
     if (counter <= 1) {
-      liBtn2.className = 'canopy';
+      liBtn2.className = "canopy";
       counter += counter + 1;
     } else {
-      liBtn2.className = 'backend';
+      liBtn2.className = "backend";
     }
 
     liBtn2.innerText = btn;
     btnContiner2.appendChild(liBtn2);
   });
 
-  document.querySelector('.p-modal').innerText = el.description;
+  document.querySelector(".p-modal").innerText = el.description;
 
-  const popupCloseButton = document.querySelector('.close');
-  popupCloseButton.addEventListener('click', () => {
-    const pop = document.querySelector('.bg-modal');
-    pop.style.display = 'none';
+  const popupCloseButton = document.querySelector(".close");
+  popupCloseButton.addEventListener("click", () => {
+    const pop = document.querySelector(".bg-modal");
+    pop.style.display = "none";
   });
 }
 
 portfolioCards.forEach((el, i) => {
-  let languages = '';
+  let languages = "";
   el.technologies.forEach((lang2) => {
     languages += `<li class='p-html'><a class='a-lang' href=''>${lang2}</a></li>`;
   });
-  let languagesm = '';
+  let languagesm = "";
   el.technologiesm.forEach((lang2) => {
     languagesm += `<li class='p-html'><a class='a-lang' href=''>${lang2}</a></li>`;
   });
 
-  let experience = '';
+  let experience = "";
   el.exp.forEach((expr) => {
     if (experience.length < 1) {
       experience += `<li class='canopy'>${expr}</li>`;
@@ -166,7 +166,7 @@ portfolioCards.forEach((el, i) => {
     }
   });
 
-  let experiencem = '';
+  let experiencem = "";
   el.expm.forEach((expr) => {
     if (experiencem.length < 1) {
       experiencem += `<li class='canopy'>${expr}</li>`;
@@ -175,12 +175,12 @@ portfolioCards.forEach((el, i) => {
     }
   });
 
-  const template = document.createElement('template');
+  const template = document.createElement("template");
 
-  const btn = document.createElement('button');
-  btn.className = 'p-button headmargin12';
+  const btn = document.createElement("button");
+  btn.className = "p-button headmargin12";
   btn.innerText = el.button;
-  btn.addEventListener('click', () => {
+  btn.addEventListener("click", () => {
     popup(i);
   });
 
@@ -202,6 +202,6 @@ portfolioCards.forEach((el, i) => {
       </li>`;
 
   const far = template.content.lastElementChild;
-  template.content.getElementById('p-cont').appendChild(btn);
-  grab('cards').appendChild(far);
+  template.content.getElementById("p-cont").appendChild(btn);
+  grab("cards").appendChild(far);
 });
