@@ -22,8 +22,8 @@ const portfolioCards = [
     imagem: 'src/Snapshoot_Portfolio.png',
     popImgd: 'src/Snapshoot_Portfoliod.png',
     name: 'Tonic',
-    exp: ['CANOPY', '•','Back End Dev','•', '2015'],
-    expm: ['CANOPY','•', 'Back End Dev',,'•', '2015'],
+    exp: ['CANOPY', '•','Back End Dev', '•', '2015'],
+    expm: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
     technologiesm: ['CSS', 'JavaScript', 'html'],
     description:
@@ -40,8 +40,8 @@ const portfolioCards = [
     imageo: 'src/Snapshoot_Portfoliod2.png',
     popImgd: 'src/Snapshoot_Portfoliod2.png',
     name: 'Multi-Post Stories',
-    exp: ['FACEBOOK','•', 'Ful Stack Dev','•', '2015'],
-    expm: ['CANOPY','•', 'Back End Dev','•', '2015'],
+    exp: ['FACEBOOK', '•', 'Ful Stack Dev', '•', '2015'],
+    expm: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
     technologiesm: ['CSS', 'JavaScript', 'html'],
     description:
@@ -58,8 +58,8 @@ const portfolioCards = [
     imagem: 'src/Snapshoot_Portfolio(3).png',
     popImgd: 'src/Snapshoot_Portfoliod3.png',
     name: 'Facebook 360',
-    exp: ['FACEBOOK','•', 'Ful Stack Dev','•', '2015'],
-    expm: ['CANOPY','•', 'Back End Dev','•', '2015'],
+    exp: ['FACEBOOK', '•', 'Ful Stack Dev', '•', '2015'],
+    expm: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
     technologiesm: ['CSS', 'JavaScript', 'html'],
     description:
@@ -77,8 +77,8 @@ const portfolioCards = [
     imageo: 'src/Snapshoot_Portfoliod4.png',
     popImgd: 'src/Snapshoot_Portfoliod4.png',
     name: 'Uber Navigation',
-    exp: ['UBER','•', 'Lead Developer','•', '2018'],
-    expm: ['CANOPY','•', 'Back End Dev','•', '2015'],
+    exp: ['UBER', '•', 'Lead Developer', '•', '2018'],
+    expm: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
     technologiesm: ['CSS', 'JavaScript', 'html'],
     description:
@@ -129,7 +129,7 @@ function popup(position) {
     const liBtn2 = document.createElement('li');
     if (counter <= 1) {
       liBtn2.className = 'canopy';
-      counter = counter + 1;
+      counter += counter + 1;
     } else {
       liBtn2.className = 'backend';
     }
