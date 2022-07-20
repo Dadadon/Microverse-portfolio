@@ -489,6 +489,7 @@ textarea {
   content: "●";
   display: inline-block;
 }
+
 .canopy {
   position: static;
   width: auto;
@@ -887,6 +888,7 @@ textarea {
     flex-direction: row;
     float: left;
     gap: 1rem;
+    flex-wrap: nowrap;
     margin-left: 1rem;
   }
 
@@ -1015,11 +1017,8 @@ textarea {
     width: 100%;
     height: 60%;
   }
+
   .modal-content {
     height: 80%;
-  }
-
-  .langm {
-    flex-wrap: nowrap;
   }
 }
