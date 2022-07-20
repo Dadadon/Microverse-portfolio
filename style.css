@@ -110,9 +110,9 @@ ul {
   align-self: center;
 }
 
- .modal-image-holder {
-    width: 100%;
-    height: 40%;
+.modal-image-holder {
+  width: 100%;
+  height: 40%;
 }
 
 .modal-layout {
@@ -641,13 +641,13 @@ textarea {
 }
 
 .langm {
-    display: flex;
-    flex-direction: row;
-    float: left;
-    gap: 1rem;
-    margin-left: 1rem;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-direction: row;
+  float: left;
+  gap: 1rem;
+  margin-left: 1rem;
+  flex-wrap: wrap;
+}
 
 @media all and (min-width: 1025px) {
   body {
@@ -1018,7 +1018,7 @@ textarea {
   .modal-content {
     height: 80%;
   }
-  
+
   .langm {
     flex-wrap: nowrap;
   }
