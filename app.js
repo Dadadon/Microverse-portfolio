@@ -218,7 +218,7 @@ const nameInput = form.fullname;
 const formElts = form.querySelectorAll('input, textarea');
 
 const addToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
-const retrieveFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
+//const retrieveFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
 formElts.forEach((fe) => {
   fe.addEventListener('input', () => {
