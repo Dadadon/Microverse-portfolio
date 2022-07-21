@@ -65,6 +65,17 @@ ul {
   line-height: 44px;
 }
 
+.error {
+  width: auto;
+  color: red;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  display: none;
+  margin-bottom: 4px;
+}
+
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;

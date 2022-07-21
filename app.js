@@ -205,3 +205,40 @@ portfolioCards.forEach((el, i) => {
   template.content.getElementById('p-cont').appendChild(btn);
   grab('cards').appendChild(far);
 });
+
+function lowerCase(val) {
+  return /[a-z]/.test(val) && !/[A-Z]/.test(val);
+}
+
+const errorMessage = document.querySelector('.error');
+const form = document.forms['c-form'];
+const mail = form.email;
+const messageInput = form.comment;
+const nameInput = form.fullname;
+const formElts = form.querySelectorAll('input, textarea');
+
+const addToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
+// const retrieveFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
+
+formElts.forEach((fe) => {
+  fe.addEventListener('input', () => {
+    errorMessage.style.display = 'none';
+    const objectForLocalStorage = {
+      name: nameInput.value,
+      email: mail.value,
+      message: messageInput.value,
+    };
+    addToLocalStorage('formData', objectForLocalStorage);
+  });
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = mail.value;
+  if (!lowerCase(email)) {
+    errorMessage.style.display = 'block';
+  } else {
+    errorMessage.style.display = 'none';
+    form.submit();
+  }
+});
