@@ -242,7 +242,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-const formData = retrieveFromLocalStorage("formData");
+const formData = retrieveFromLocalStorage('formData');
 if (formData !== null) {
   nameInput.value = formData.name;
   mail.value = formData.email;
