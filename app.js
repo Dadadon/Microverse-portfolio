@@ -233,8 +233,8 @@ formElts.forEach((fe) => {
   });
 });
 
-form.addEventListener('submit', (l) => {
-  l.preventDefault();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
   const email = mail.value;
   if (!lowerCase(email)) {
     errorMessage.style.display = 'block';
