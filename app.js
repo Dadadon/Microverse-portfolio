@@ -218,8 +218,7 @@ const nameInput = form.fullname;
 const formElts = form.querySelectorAll('input, textarea');
 
 const addToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
-// const retrieveFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
-
+const retrieveFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 formElts.forEach((fe) => {
   fe.addEventListener('input', () => {
     errorMessage.style.display = 'none';
@@ -232,8 +231,8 @@ formElts.forEach((fe) => {
   });
 });
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
   const email = mail.value;
   if (!lowerCase(email)) {
     errorMessage.style.display = 'block';
@@ -242,3 +241,10 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+const formData = retrieveFromLocalStorage('formData');
+if (formData !== null) {
+  nameInput.value = formData.name;
+  mail.value = formData.email;
+  messageInput.value = formData.message;
+}
